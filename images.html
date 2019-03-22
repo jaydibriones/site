@@ -7,11 +7,14 @@
 
     <style>
       body{
+        margin-left: 30px;
+        margin-bottom: 20px;
         background-image: url("full-bloom.png");
         color:#409dd2;
         font-family: 'Playfair Display', serif;
       }
       .a{
+        margin-bottom: 10px;
         width: 450px;
         height: 450px;
         background:url("Untitled-2.png");
@@ -22,36 +25,64 @@
         background:url("Circle.png")
       }
       .image1{
-        width: 450px;
+        border-style: solid;
+        border-color: white;
+        border-width: thick;
+        margin:10px 5px 10px 5px;
         height:450px;
+        filter: invert(100%);
+
+
       }
       .image2{
+        border-style: solid;
+        border-color: black;
+        border-width: thick;
+        margin:10px 5px 10px 5px;
         width: 450px;
         height:450px;
+        filter: brightness(213%);
+
       }
       .image3{
+        border-style: solid;
+        border-color: black;
+        border-width: thick;
+        margin:10px 5px 10px 5px;
         width: 450px;
         height:450px;
+        filter: hue-rotate(-63.5deg);
+
       }
       .image4{
+        border-style: solid;
+        border-color: black;
+        border-width: thick;
+        margin:10px 5px 10px 5px;
         width: 450px;
         height:450px;
+        filter: drop-shadow(20px 18px 18px #19484D);
       }
+
+
 
     </style>
 
 
   </head>
   <body>
-    <h1> This is where I will put some images </h1>
-    
-    <p>Here are 4 images that I edited.</p>
-    <img class='image1' src="Image.jpeg"></img>
-    <img class='image2' src="Image.jpeg"></img>
-    <img class='image3' src="Image.jpeg"></img>
-    <img class='image4' src="Image.jpeg"></img>
+    <h1>This is where I will put some images</h1>
 
-    <p>Here are some tiles I created.</p>
+    <h2>Here are 4 images that I edited.</h2>
+
+    <img class='image1' src="Image.jpeg">1</img>
+    <img class='image2' src="Image.jpeg">2</img>
+    <img class='image3' src="Image.jpeg">3</img>
+    <img class='image4' src="Image.jpeg">4</img>
+    <p>The first photo is inverted, the 2nd is brightened,
+      the third is hue-rotated and the 4th has a drop shadow.</p>
+
+    <h2>Here are some tiles I created.</h2>
     <div class='a'> tile 1 </div>
     <div class='b'> tile 2 </div>
 
