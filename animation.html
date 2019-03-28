@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>css animation</title>
+  </head>
+  <style>
+    /* The animation code */
+    @keyframes example {
+      0%   {background-image: url("edwin jumping.jpg"); }
+      50%  {background-image: url("edwin standing.jpg");}
+      100% {background-image: url("edwin swimmng.jpg");}
+    }
+
+    /* The element to apply the animation to */
+    #boxter {
+      width: 500px;
+      height: 500px;
+      margin: 50px;
+      position: relative;
+      background-image: url("edwin jumping.jpg");
+      animation-name: example;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+
+    }
+</style>
+
+  <body>
+    <div id="boxter"></div>
+
+
+  </body>
+
+</html>

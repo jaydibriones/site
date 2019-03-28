@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!-- saved from url=(0056)https://chad-bennett.github.io/eresa/demo/transform.html -->
 <html lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  
+
   <title>transforms page</title>
   <style>
     body {
@@ -15,37 +15,181 @@
       margin: 1rem;
     }
 
-    #box1 {}
+    #box1 {display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;}
 
-    #box1:hover {}
+    #box1 :hover, #box1:focus, #box1:active {-webkit-transform: scale(0.9);
+  transform: scale(0.9);
+}
 
-    #box2 {}
+    #box2 {display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;}
 
-    #box2:hover {}
+    #box2:hover, #box2:focus, #box2:active {
+      -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
 
-    #box3 {}
+    }
 
-    #box3:hover {}
+    #box3 {display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;}
 
-    #box4 {}
+    #box3:hover, #box3:focus, #box3:active {
+  -webkit-transform: rotate(4deg);
+  transform: rotate(4deg);
+}
 
-    #box4:hover {}
+    #box4 {display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
 
-    #box5 {}
+    #box4:hover, #box4:focus, #box4:active {
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
+}
 
-    #box5:hover {}
+    #box5 {display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;}
 
-    #box6 {}
+    #box5:hover, #box5:focus, #box5:active {
+  -webkit-transform: skew(-10deg);
+  transform: skew(-10deg);
+}
 
-    #box6:hover {}
 
-    #box7 {}
+    #box6 {display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
 
-    #box7:hover {}
+    #box6:hover, #box6:focus, #box6:active { -webkit-transform: translateX(-8px);
+  transform: translateX(-8px);
 
-    #box8 {}
+}
 
-    #box8:hover {}
+#box7 {
+display: inline-block;
+vertical-align: middle;
+-webkit-transform: perspective(1px) translateZ(0);
+transform: perspective(1px) translateZ(0);
+box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+position: relative;
+-webkit-transition-property: color;
+transition-property: color;
+-webkit-transition-duration: 0.3s;
+transition-duration: 0.3s;
+}
+#box7:before {
+content: "";
+position: absolute;
+z-index: -1;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background: #2098D1;
+-webkit-transform: scaleX(0);
+transform: scaleX(0);
+-webkit-transform-origin: 100% 50%;
+transform-origin: 100% 50%;
+-webkit-transition-property: transform;
+transition-property: transform;
+-webkit-transition-duration: 0.3s;
+transition-duration: 0.3s;
+-webkit-transition-timing-function: ease-out;
+transition-timing-function: ease-out;
+}
+
+#box7, #box7:focus, #box7:active {
+color: white;
+}
+#box7:hover:before, #box7:focus:before, #box7:active:before {
+-webkit-transform: scaleX(1);
+transform: scaleX(1);}
+
+#box8 {
+display: inline-block;
+vertical-align: middle;
+-webkit-transform: perspective(1px) translateZ(0);
+transform: perspective(1px) translateZ(0);
+box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+position: relative;
+-webkit-transition-property: color;
+transition-property: color;
+-webkit-transition-duration: 0.3s;
+transition-duration: 0.3s;
+}
+#box8:before {
+content: "";
+position: absolute;
+z-index: -1;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background: #2098D1;
+-webkit-transform: scaleY(0);
+transform: scaleY(0);
+-webkit-transform-origin: 50% 0;
+transform-origin: 50% 0;
+-webkit-transition-property: transform;
+transition-property: transform;
+-webkit-transition-duration: 0.3s;
+transition-duration: 0.3s;
+-webkit-transition-timing-function: ease-out;
+transition-timing-function: ease-out;
+}
+#box8:hover, #box8:focus, #box8:active {
+color: white;
+}
+#box8:hover:before, #box8:focus:before, #box8:active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}
+
   </style>
 </head>
 
