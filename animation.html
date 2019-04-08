@@ -6,15 +6,87 @@
     <title>css animation</title>
   </head>
   <style>
-    /* The animation code */
-    @keyframes example {
-      0%   {background-image: url("Untitled-2.png"); }
-      50%  {background-image: url("edwin jumping.jpg");}
-      100% {background-image: url("Untitled-1.png");}
-    }
+  body{
+    margin-left: 30px;
+    margin-bottom: 20px;
+    background-image: url("full-bloom.png");
+    color:#409dd2;
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+  }
+  div {
+width: 100px;
+height: 50px;
+background-color: red;
+font-weight: bold;
+position: relative;
+-webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+animation: mymove 5s infinite;
+}
 
-    /* The element to apply the animation to */
-    #boxter {
+/* Safari 4.0 - 8.0 */
+#div1 {-webkit-animation-timing-function: linear;}
+#div2 {-webkit-animation-timing-function: ease;}
+#div3 {-webkit-animation-timing-function: ease-in;}
+#div4 {-webkit-animation-timing-function: ease-out;}
+#div5 {-webkit-animation-timing-function: ease-in-out;}
+
+/* Standard syntax */
+#div1 {animation-timing-function: linear;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;}
+#div5 {animation-timing-function: ease-in-out;}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+from {left: 0px;}
+to {left: 300px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+from {left: 0px;}
+to {left: 300px;}
+}
+
+
+  /* Standard syntax */
+    @keyframes ok {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+  #lol {
+    margin-left: 30px;
+    margin-bottom: 20px;
+    width: 500px;
+    height: 500px;
+    background-color: red;
+    position: relative;
+    -webkit-animation-name: ok; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: ok;
+    animation-duration: 4s;
+    animation-delay: -2s;
+    animation-iteration-count: infinite;
+}
+
+
+
+
+  /* The animation code */
+  @keyframes example {
+  0%   {background-image: url("Untitled-2.png"); }
+  50%  {background-image: url("edwin jumping.jpg");}
+  100% {background-image: url("Untitled-1.png");}
+}
+
+/* The element to apply the animation to */
+  #boxter {
       width: 500px;
       height: 500px;
       margin: 50px;
@@ -23,13 +95,20 @@
       animation-name: example;
       animation-duration: 4s;
       animation-iteration-count: infinite;
-
     }
+
+
 </style>
 
   <body>
-    <div id="boxter"></div>
+    <div id="div1">linear</div>
+    <div id="div2">ease</div>
+    <div id="div3">ease-in</div>
+    <div id="div4">ease-out</div>
+    <div id="div5">ease-in-out</div>
 
+    <div id="boxter">Animation 2</div>
+    <div id="lol">Animation 3</div>
 
   </body>
 
