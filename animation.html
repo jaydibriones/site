@@ -14,41 +14,8 @@
     font-size: 20px;
     font-family: 'Playfair Display', serif;
   }
-  div {
-width: 100px;
-height: 50px;
-background-color: red;
-font-weight: bold;
-position: relative;
--webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
-animation: mymove 5s infinite;
-}
+  
 
-/* Safari 4.0 - 8.0 */
-#div1 {-webkit-animation-timing-function: linear;}
-#div2 {-webkit-animation-timing-function: ease;}
-#div3 {-webkit-animation-timing-function: ease-in;}
-#div4 {-webkit-animation-timing-function: ease-out;}
-#div5 {-webkit-animation-timing-function: ease-in-out;}
-
-/* Standard syntax */
-#div1 {animation-timing-function: linear;}
-#div2 {animation-timing-function: ease;}
-#div3 {animation-timing-function: ease-in;}
-#div4 {animation-timing-function: ease-out;}
-#div5 {animation-timing-function: ease-in-out;}
-
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes mymove {
-from {left: 0px;}
-to {left: 300px;}
-}
-
-/* Standard syntax */
-@keyframes mymove {
-from {left: 0px;}
-to {left: 300px;}
-}
 
 
   /* Standard syntax */
@@ -91,21 +58,56 @@ to {left: 300px;}
       height: 500px;
       margin: 50px;
       position: relative;
-      background-image: url("Untitled-1.png");
+      background-image: url("edwin jumping.jpg");
       animation-name: example;
       animation-duration: 4s;
       animation-iteration-count: infinite;
     }
 
+    div{
+  width: 100px;
+  height: 50px;
+  background-image: url("pexels-photo-921319.jpeg");
+  font-weight: bold;
+  position: relative;
+  -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+  animation: mymove 5s infinite;
+  }
 
+  /* Safari 4.0 - 8.0 */
+  #div1 {-webkit-animation-timing-function: linear;}
+  #div2 {-webkit-animation-timing-function: ease;}
+  #div3 {-webkit-animation-timing-function: ease-in;}
+  #div4 {-webkit-animation-timing-function: ease-out;}
+  #div5 {-webkit-animation-timing-function: ease-in-out;}
+
+  /* Standard syntax */
+  #div1 {animation-timing-function: linear;}
+  #div2 {animation-timing-function: ease;}
+  #div3 {animation-timing-function: ease-in;}
+  #div4 {animation-timing-function: ease-out;}
+  #div5 {animation-timing-function: ease-in-out;}
+
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes mymove {
+  from {left: 0px;}
+  to {left: 300px;}
+  }
+
+  /* Standard syntax */
+  @keyframes mymove {
+  from {left: 0px;}
+  to {left: 300px;}
+  }
 </style>
 
   <body>
-    <div id="div1">ani</div>
-    <div id="div2">ma</div>
-    <div id="div3">ti</div>
-    <div id="div4">on</div>
-    <div id="div5">1</div>
+    <p>Animation 1</p>
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+    <div id="div4"></div>
+    <div id="div5"></div>
 
     <div id="boxter">Animation 2</div>
     <div id="lol">Animation 3</div>
