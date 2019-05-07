@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
-  <head>
     <meta charset="utf-8">
 
     <title>Seahorse Serenity</title>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900|Playfair+Display:400,400i" rel="stylesheet">
 
+    <head>
     <style>
-      
+
       .grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -19,24 +20,38 @@
       .span-col-3{grid-column: span 3 / auto;}
 
       body {
-        background: #d6c6ff;
-        color: white;
+        color: #2a004b;
+        width: 80%;
+        margin-left: 50px;
+        max-width: 900 px;
+        background-image: url("full-bloom.png");
+        font-size: 20px;
+        font-family: 'Playfair Display', serif;
       }
 
       #title {
-          background: #2055c0;
+          background: #e8c6ff;
         }
 
       nav {
-        background: #156f32;
+        background: #e8c6ff;
+        float: left;
       }
 
       article {
-        background: #157a61;
+        background: #e8c6ff;
+        width: 80%;
+        float: left;
       }
 
       image {
-        width: 100px x 100px;
+        width: 80%;
+        max-width: 100px;
+        float: right;
+      }
+
+      footer{
+        background: #e8c6ff;
       }
 
     </style>
@@ -49,11 +64,7 @@
 
       <div id="title" class="span-col-2">Seahorse Serenity</div>
 
-      <div id="image">
-
-        <img src="seahorse.jpeg"</img>
-
-      </div>
+      <div id="image"><img src="seahorse.jpeg"</img></div>
 
       <nav>
           <ul>
